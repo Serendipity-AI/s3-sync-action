@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Sync a directory to an AWS S3 repository
 LABEL "com.github.actions.icon"="refresh-cw"
 LABEL "com.github.actions.color"="green"
 
-RUN apk add --nocache py-pip ca-certificates && pip install s3cmd
+RUN apk add py-pip ca-certificates && pip install s3cmd
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
