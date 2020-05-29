@@ -16,7 +16,6 @@ s3cmd \
   --access_key=$AWS_ACCESS_KEY_ID \
   --secret_key=$AWS_SECRET_ACCESS_KEY \
   --verbose \
-  --debug \
   --human-readable-sizes \
   --stop-on-error \
   $*
